@@ -1,0 +1,70 @@
+
+let factor = function (a) {
+       let factor = []
+      for (i = 1; i <= a; i++){
+
+       if(a % i === 0){
+        
+         factor.push(i)
+       }
+
+        }
+
+        return factor 
+}
+
+
+let group = function (a) {
+    let group = []
+   for(let i = 0; i < a; i++ ){
+     group.push(i)
+   }
+
+    return group
+}  
+
+
+
+let test = function (gen, f) {  
+   for(let num of gen){
+   
+    if (num === 1) continue
+
+   if (f.includes(num)) {
+      return true
+        //break
+   }else{
+       continue
+    }     
+     
+    }
+
+    return false
+}
+
+
+
+function generator(value) {
+   let generator = []
+
+  let cGroup  = group(value)
+  let valueFactor = factor(value) 
+
+  for (let num of cGroup){
+
+       if(!(test(factor(num), valueFactor))){
+         if(num === 0) continue
+          generator.push(num)
+         
+       }
+    
+   }
+
+   return `the generator of z${value}+ is ${generator.join(" ")}`
+}
+
+
+let y = generator(12)
+
+console.log(y)
+
