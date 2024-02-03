@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @phazkid
-- 👀 I’m interested in php, JavaScript, react
-- 🌱 I’m currently learning php
-- 💞️ I’m looking to collaborate on project
+- 👀 I’m a fullstack developer
+- 🌱 im good in html css javascript nodejs boostrap mongodb express ejs
+- 💞️ I’m looking to collaborate on projects
 - 📫 How to reach me 08064587884
 
 <!---
